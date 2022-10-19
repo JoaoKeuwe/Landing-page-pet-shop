@@ -89,6 +89,11 @@ main {
   background: linear-gradient(114.78deg, #a4cb60 -84.37%, #8dca23 -1.72%);
 }
 
+section {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 100px;
+}
+
 .dog {
   position: absolute;
   margin-left: 250px;
@@ -101,23 +106,24 @@ main {
 }
 
 /* CSS */
-.button-71 {
-  background-color: #0078d0;
-  border: 0;
-  border-radius: 56px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu,
-    "Helvetica Neue", sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  outline: 0;
-  padding: 16px 21px;
+
+/* CSS */
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
   position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.3s;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -126,85 +132,147 @@ main {
   cursor: pointer;
 }
 
-.button-71:before {
-  background-color: initial;
-  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
-  border-radius: 125px;
+.button-86::after,
+.button-86::before {
   content: "";
-  height: 50%;
-  left: 4%;
-  opacity: 0.5;
   position: absolute;
-  top: 0;
-  transition: all 0.3s;
-  width: 92%;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
 }
 
-.button-71:hover {
-  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
-    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
-  transform: scale(1.05);
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #481d87;
+  border-radius: 10px;
 }
 
-@media (min-width: 768px) {
-  .button-71 {
-    padding: 16px 48px;
-  }
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: rgb(90, 200, 20);
+  background: linear-gradient(
+    184deg,
+    rgba(90, 200, 20, 1) 5%,
+    rgba(44, 89, 200, 1) 70%
+  );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
 }
 
-/* .title-page-2 {
-    margin-left: 120px;
-    margin-top: 30px;
-    font-size: 40px;
-    padding: 40px;
-} */
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
 .title-page-2 {
-    display: flex;
-    justify-content: center;
-   font-size: 40px;
-   padding: 12px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding-top: 42px;
 }
 
 .span-keuwe {
-    color:#76ad18
+  color: #76ad18;
 }
 .corpo {
-   
-    margin-left: 300px;
+  margin-left: 20px;
 }
 
 .conteudo {
   margin-right: auto;
   display: table;
-  width: 400px;
   margin-left: auto;
 }
 
 .imagem {
-    display: table-cell;
-    float: left;
+  display: table-cell;
+  float: left;
 }
 
 .title-image {
   width: 300px;
+  font-family: "Acme", sans-serif;
+  font-size: 30px;
+  align-items: center;
+  margin-left: 40px;
+  padding-bottom: 20px;
 }
 
 .texto {
-    display: table-cell;
-    float: left;;
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 20px;
+  display: table-cell;
+  float: left;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .petshop {
-    width: 180px;
+  width: 180px;
+  margin-left: 50px;
 }
 
 .corpo {
-    display: flex;
+  display: flex;
 }
 
 section {
-    background: #D9D9D9;
+  background: #d9d9d9;
+}
+
+.contatos {
+  height: 200px;
+  letter-spacing: 1px;
+  margin-left: 100px;
+  border-radius: 56px;
+}
+
+footer {
+  background: linear-gradient(149.74deg, #a4cb60 11.46%, #344a0d 90.97%);
+}
+
+.maps {
+  margin-left: 700px;
+  margin-top: -200px;
+  padding-bottom: 40px;
+  width: 30%;
+  border-radius: 3%;
+}
+
+.information {
+  display: flex;
+  margin-top: 20px;
+  font-size: 25px;
+  color: white;
+  margin-left: 70px;
+}
+
+.social-media {
+  padding: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.title-footer {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
 }
