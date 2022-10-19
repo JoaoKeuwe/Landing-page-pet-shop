@@ -247,6 +247,7 @@ section {
 
 footer {
   background: linear-gradient(149.74deg, #a4cb60 11.46%, #344a0d 90.97%);
+ 
 }
 
 .maps {
@@ -273,6 +274,19 @@ footer {
 
 .title-footer {
   display: flex;
+  padding-top: 20px;
+  color: white;
   justify-content: center;
   font-size: 40px;
+}
+
+.image-footer {
+  padding-left: 10px;
+  width: 40px;
+}
+
+.img-dog {
+  margin-left: 1400px;
+  margin-top: -500px;
+  width: 500px;
 }
