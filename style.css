@@ -1,106 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .nav-bar {
-    display: flex;
-    margin-top: -50px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-
+  display: flex;
+  margin-top: -50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .lists {
-   display: flex;
-   list-style: none;
+  display: flex;
+  list-style: none;
 }
 
-li{
-    margin-left: 100px;
-    font-weight: bold;
-    font-size: 20px;
+li {
+  margin-left: 100px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 li:hover {
-   /* From https://css.glass */
-background: rgba(0, 110, 255, 0.433);
-border-radius: 5px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(1px);
--webkit-backdrop-filter: blur(1px);
+  /* From https://css.glass */
+  background: rgba(0, 110, 255, 0.433);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 .logo {
-    width: 80px;
-    display: flex;
-    height: 70px;
-    margin-top: 10px;
-    
-  
+  width: 80px;
+  display: flex;
+  height: 70px;
+  margin-top: 10px;
 }
 
-.logo, .name-petshop {
-    display: inline-block;
+.logo,
+.name-petshop {
+  display: inline-block;
 }
 
 .name-petshop {
-    font-family: 'Indie Flower', cursive;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 35px;
-    color: #000000;
-    
+  font-family: "Indie Flower", cursive;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 35px;
+  color: #000000;
 }
 
-
 .nav {
-    display: flex;
-    align-items: center;
-    padding-right: 20px;
-    margin-left: 130px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  margin-left: 130px;
 }
 
 .title {
-   margin-left: 120px;
-   margin-top: 30px;
-   font-size: 90px;
-   padding: 40px;
+  margin-left: 120px;
+  margin-top: 30px;
+  font-size: 90px;
+  padding: 40px;
 }
 
 .subtitle {
-    margin-left: 160px;
-    font-size: 55px;
-    width: 600px;
-    display: inline-block;
+  margin-left: 160px;
+  font-size: 55px;
+  width: 600px;
+  display: inline-block;
 }
 
 .span-pet {
-    color: rgb(255, 255, 255);
-    font-size: 100px;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
 }
 
 .span-pet-2 {
-    color: rgb(255, 255, 255);
-    font-size: 60px;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
 }
 
 main {
-    height: 800px;
-    background: linear-gradient(114.78deg, #A4CB60 -84.37%, #8DCA23 -1.72%);
+  height: 800px;
+  border-bottom: 2px solid #000000;
+  background: linear-gradient(114.78deg, #a4cb60 -84.37%, #8dca23 -1.72%);
 }
 
 .dog {
-    position:  absolute;
-   margin-left:250px;
-   margin-top: -320px;
-   width: 900px;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -320px;
+  width: 900px;
 }
 
 .test {
-    width: 45px;
-    ;
+  width: 45px;
 }
 
 /* CSS */
@@ -111,7 +107,8 @@ main {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", sans-serif;
   font-size: 25px;
   font-weight: 600;
   outline: 0;
@@ -119,13 +116,12 @@ main {
   position: relative;
   text-align: center;
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-left: 300px;
   margin-top: 100px;
-
 }
 
 .button-71:before {
@@ -135,15 +131,16 @@ main {
   content: "";
   height: 50%;
   left: 4%;
-  opacity: .5;
+  opacity: 0.5;
   position: absolute;
   top: 0;
-  transition: all .3s;
+  transition: all 0.3s;
   width: 92%;
 }
 
 .button-71:hover {
-  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
   transform: scale(1.05);
 }
 
@@ -159,3 +156,37 @@ main {
     font-size: 40px;
     padding: 40px;
 } */
+
+.corpo {
+    width: 950px;
+    margin: auto;
+}
+
+.conteudo {
+    display: table;
+}
+
+.imagem {
+    display: table-cell;
+    float: left;
+}
+
+.texto {
+    display: table-cell;
+    float: left;;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.petshop {
+    width: 180px;
+}
+
+.corpo {
+    margin-right: 0px;
+}
+
+section {
+    background: #D9D9D9;
+}
