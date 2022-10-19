@@ -37,11 +37,21 @@ backdrop-filter: blur(1px);
     display: flex;
     height: 70px;
     margin-top: 10px;
+    
   
 }
 
 .logo, .name-petshop {
     display: inline-block;
+}
+
+.name-petshop {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 35px;
+    color: #000000;
+    
 }
 
 
