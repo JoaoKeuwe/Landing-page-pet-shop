@@ -97,8 +97,8 @@ section {
 .dog {
   position: absolute;
   margin-left: 250px;
-  margin-top: -320px;
-  width: 900px;
+  margin-top: -297px;
+  width: 870px;
 }
 
 .test {
@@ -193,6 +193,8 @@ section {
 
 .span-keuwe {
   color: #76ad18;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .corpo {
   margin-left: 20px;
