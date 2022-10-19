@@ -169,17 +169,24 @@ main {
     color:#76ad18
 }
 .corpo {
-    width: 950px;
-    margin: auto;
+   
+    margin-left: 300px;
 }
 
 .conteudo {
-    display: table;
+  margin-right: auto;
+  display: table;
+  width: 400px;
+  margin-left: auto;
 }
 
 .imagem {
     display: table-cell;
     float: left;
+}
+
+.title-image {
+  width: 300px;
 }
 
 .texto {
