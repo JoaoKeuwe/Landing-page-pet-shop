@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+} 
 .nav-bar {
   display: flex;
   margin-top: -50px;
@@ -19,14 +23,44 @@
 li {
   margin-left: 100px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
 }
 
+li::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+li:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+li::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgba(81, 0, 255, 0.903);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+
 li:hover {
   /* From https://css.glass */
-  background: rgba(0, 110, 255, 0.433);
   border-radius: 5px;
+  color: white;
+  transform: scale(1.13); 
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
@@ -97,7 +131,7 @@ section {
 .dog {
   position: absolute;
   margin-left: 250px;
-  margin-top: -297px;
+  margin-top: -301px;
   width: 870px;
 }
 
@@ -273,6 +307,7 @@ footer {
   padding: 20px;
   margin-left: 20px;
   cursor: pointer;
+  width: 50px;
 }
 
 .title-footer {
@@ -287,10 +322,22 @@ footer {
   padding-left: 10px;
   width: 40px;
   padding-top: 10px;
+ 
+}
+
+.social-media:hover {
+  transform: scale(1.40); 
+  transition: 1s;
 }
 
 .img-dog {
   margin-left: 1400px;
   margin-top: -500px;
   width: 500px;
+}
+a {
+  text-decoration: none;
+}
+#about {
+  text-decoration: none;
 }
