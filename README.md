@@ -12,10 +12,10 @@ Desenvolvi esta página de vendas de um petshop onde criei desde o Figma até o 
 ##
 
 Utilizei as seguintes Linguagens:<br>
- - HTML<br/>
- - CSS <br/>
- 
-## 
+
+- HTML<br/>
+- CSS <br/>
+
+##
 
 https://user-images.githubusercontent.com/91097315/196779253-21eb4b45-6094-4b79-adbd-cb5834837f77.mp4
-
