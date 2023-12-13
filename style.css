@@ -20,7 +20,7 @@ html {
   font-size: 20px;
   color: white;
   font-weight: 500;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
 .navbar-container {
@@ -39,9 +39,9 @@ html {
  
 } */
 
-.logo-container p{
- font-size: 40px;
- font-weight: bold;
+.logo-container p {
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .image-container {
@@ -51,7 +51,7 @@ html {
   margin-left: 50%;
 }
 
-.image-container img{
+.image-container img {
   width: 40px;
 }
 
@@ -76,13 +76,13 @@ html {
 }
 .main-section h1 {
   font-size: 60px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
 .main-section p {
   font-size: 45px;
   color: white;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
 .main-section button {
@@ -94,7 +94,7 @@ html {
   border: none;
   color: white;
   font-size: 20px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
 .span-pet {
@@ -171,6 +171,7 @@ section {
 
 .corpo {
   display: flex;
+  flex-wrap: wrap;
 }
 
 section {
@@ -180,20 +181,16 @@ section {
 .contatos {
   height: 200px;
   letter-spacing: 1px;
-  margin-left: 100px;
   border-radius: 56px;
 }
 
 footer {
+  padding: 10px;
   background: linear-gradient(149.74deg, #a4cb60 11.46%, #344a0d 90.97%);
 }
 
 .maps {
-  margin-left: 670px;
-  margin-top: -200px;
-  padding-bottom: 40px;
-  width: 30%;
-  border-radius: 3%;
+  width: 100%;
 }
 
 .information {
@@ -201,16 +198,17 @@ footer {
   margin-top: 20px;
   font-size: 25px;
   color: white;
-  margin-left: 70px;
 }
 
 .social-media {
-  padding: 20px;
-  margin-left: 20px;
   cursor: pointer;
-  width: 50px;
+  width: 30px;
 }
-
+.icons-media {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
 .title-footer {
   display: flex;
   padding-top: 20px;
@@ -230,14 +228,34 @@ footer {
   transition: 1s;
 }
 
-.img-dog {
-  margin-left: 1400px;
-  margin-top: -500px;
-  width: 500px;
-}
 a {
   text-decoration: none;
 }
 #about {
   text-decoration: none;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.iframe-maps {
+  width: 400px;
+}
+
+.image-dogs-footer {
+  width: 500px;
+}
+
+.iframe-maps iframe {
+  border-radius: 20px;
+}
+
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
